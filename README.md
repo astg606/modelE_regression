@@ -198,13 +198,13 @@ Makefile logs and other script outputs will be written to:
  
 ```
 <scratchdir>/results/<repobranch>/<compiler>
+```
  
 For example:
- 
 ```
    $NOBACKUP/my_modele_out/results/planet_1.0/intel/
 ```
- 
+
 ## Conditional testing based on rundeck dependencies
  
 The goal is to cut down on wasted compute cycles,
@@ -218,7 +218,7 @@ state until SLURM detects success of its "parent" rundeck.
 It works by first running all the rundecks that have no dependencies,
 and gathering the SLURM jobID from each of them.
 Then the dependent runs are submitted using SLURM's `--dependency`
- option:
+option:
  
 ```
 sbatch --dependency=afterok:<jobID_1>:<jobID_2>[:etc] /path/to/rundeck_jobscript
