@@ -192,7 +192,7 @@ where `<bracketed>` parameters are defined in your configuration
 file.  For example:
  
 ```
-$NOBACKUP/my_modele_out/scratch/planet_1.0/savedisk/E_Mars.serial.intel/
+   $NOBACKUP/my_modele_out/scratch/planet_1.0/savedisk/E_Mars.serial.intel/
 ```
 Makefile logs and other script outputs will be written to:
  
@@ -202,7 +202,7 @@ Makefile logs and other script outputs will be written to:
 For example:
  
 ```
-$NOBACKUP/my_modele_out/results/planet_1.0/intel/
+   $NOBACKUP/my_modele_out/results/planet_1.0/intel/
 ```
  
 ## Conditional testing based on rundeck dependencies
