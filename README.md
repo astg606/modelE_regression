@@ -9,7 +9,8 @@ the GISS project directory on discover:
 ```
    /discover/nobackup/projects/giss_ana
 ```
- 
+
+
 ## Location of the Python scripts
  
 The scripts are in:
@@ -25,6 +26,18 @@ Some of the files were edited after the tool was obtained from the repository. O
 ``` 
  
 It has the email addresses of the users expected to receive the regression test report.
+
+## Basic worklow
+Here is how the regression testing tool works.
+
+```mermaid
+flowchart TB
+    A[Read the configuration file(s)] --> B[Create the experiment directory]
+    B --> C[Obtain the code]
+    C --> D[Registered all the rundecks]
+    D --> F[For each rundeck and compiler/mode pair: get the code, compile it, run the experiment and compare]
+    F --> G[Submit a report after all the rundecks are executed.]
+```
  
 ## Location of the modelE branches
  
