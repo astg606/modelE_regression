@@ -35,7 +35,7 @@ flowchart TB
     A[Read the configuration file] --> B[Create the experiment directory]
     B --> C[Obtain the code]
     C --> D[Registered all the rundecks]
-    D --> F[For each rundeck and compiler/mode pair: <br> - get the code, <br> - compile it, <br> - run the experiment, <br> - compare against baseline]
+    D --> F[For each rundeck/compiler/mode: <br> - get the code, <br> - compile it, <br> - run the experiment, <br> - compare against baseline]
     F --> G[Submit a report after all <br> the rundecks are executed.]
 ```
  
