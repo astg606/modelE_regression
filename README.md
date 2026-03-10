@@ -32,7 +32,7 @@ Here is how the regression testing tool works.
 
 ```mermaid
 flowchart TB
-    A[Read the configuration file(s)] --> B[Create the experiment directory]
+    A[Read the configuration file] --> B[Create the experiment directory]
     B --> C[Obtain the code]
     C --> D[Registered all the rundecks]
     D --> F[For each rundeck and compiler/mode pair: get the code, compile it, run the experiment and compare]
